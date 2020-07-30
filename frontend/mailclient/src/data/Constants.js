@@ -2,7 +2,7 @@ const BASE = "https://cors-anywhere.herokuapp.com/https://mirizm5848.execute-api
 const SHOW_EMAILS = BASE + "/showmails"
 const MAIL_DETAILS_URL = BASE+ "/showmail?seq="
 const MARK_AS_READ_URL = BASE + "/markasread?seq="
-const CONNECT = BASE+ "/connect"
+const CONNECT_URL = BASE+ "/connect"
 
 
-export {SHOW_EMAILS, MAIL_DETAILS_URL, MARK_AS_READ_URL, CONNECT}
+export {SHOW_EMAILS, MAIL_DETAILS_URL, MARK_AS_READ_URL, CONNECT_URL}
