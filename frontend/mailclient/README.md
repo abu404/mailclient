@@ -5,3 +5,5 @@ To Set up front end
     - If you want to run the code locally set the BASE variable to `localhost:7000`
     - Change the base URL of your lambda function
 - Run `npm run start`
+
+Note: `npm install` is mandatory both in frontend/mailclient and in ../
