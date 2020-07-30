@@ -12,7 +12,7 @@ To set up the endpoint in AWS lambda
 - Run `npm i serverless -g`
 - Check the serverless.yml file. The region is set to ap-south-1. You can update this based on your preference.
 - Run `sls deploy`
-- Update the frontend constants file with the URL you got after `sls deploy`. Change those constant instructions is given in frontend/README.md
+- Update the frontend constants file with the URL you got after `sls deploy`. Changing those constant instructions is given in frontend/README.md
 - In case of any issue to debug with logs run `sls logs -f app`
 
 
