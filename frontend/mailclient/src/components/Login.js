@@ -1,6 +1,6 @@
 import React from 'react';
 import { Spinner } from 'reactstrap';
-
+import {CONNECT_URL} from '../data/Constants'
 
 const inputStyles = {
   input: {
@@ -79,7 +79,7 @@ export default class Login extends React.Component {
       // redirect: 'follow'
     };
     this.setState({ dataLoading: true })
-    fetch("https://mirizm5848.execute-api.ap-south-1.amazonaws.com/dev/connect", requestOptions)
+    fetch(CONNECT_URL, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result)
