@@ -73,6 +73,7 @@ app.post('/connect', async (req, res) => {
 
 app.get('/showmails', authenticateToken, async (req, res) => {
   const [status, data] = await mailHelper.fetch(req.config)
+  console.log(req.config)
   if (!status)
 
     // Errors can be returned with custom errorcodes for better frontend handling. 
@@ -127,6 +128,9 @@ app.get('/markasread', authenticateToken, async (req, res) => {
   })
 })
 
-const port = 7000
+
 module.exports.handler = serverless(app);
-// app.listen(port, () => console.log(`Running app in ${port}`))
+if (process.env.RUN_LOCAL == 1){
+  const port = 7000
+  app.listen(port, () => console.log(`Running app in ${port}`))
+}
